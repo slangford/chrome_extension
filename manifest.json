@@ -5,13 +5,17 @@
   "description": "This extension will log highlighted text with relevant details to database ",
   "version": "1.0",
 
+  "icons": { "19": "icon19.png",
+           "48": "icon48.png",
+           "128": "icon128.png" },
+
   "browser_action": {
-   "default_icon": "icon.png",
+   "default_icon": "icon19.png",
    "default_popup": "popup.html",
    "default_title": "Log This!"
   },
-
+  
   "permissions": [
-   "activeTab"
+    "tabs", "http://*/*", "https://*/*"
   ]
 }
